@@ -7,7 +7,6 @@
     box-sizing: border-box;
 }
 
-/* Estiliza o botão de abrir */
 .abrirMenu {
     font-family: "Jersey 25", sans-serif;
     padding: 10px 20px;
@@ -17,13 +16,12 @@
     border-radius: 5px;
 }
 
-.cadastrar h1{
+.cadastrar h1 {
     font-family: "JetBrains Mono", monospace;
     color: #e83c84c3;
     text-decoration: underline;
 }
 
-/* O fundo desfocado */
 .desfocado {
     position: fixed;
     top: 0;
@@ -37,20 +35,18 @@
     align-items: center;
 }
 
-/* Caixa do menu */
 .cadastrarSe {
-    background: #222222; /* Usei uma cor mais clara para o fundo */
+    background: #222222;
     width: 500px;
     height: 550px;
-    border: 3px solid #e83c84c3; /* Cor da borda */
-    border-radius: 86px 32px 86px 86px; /* Borda arredondada */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra para o menu */
+    border: 3px solid #e83c84c3;
+    border-radius: 86px 32px 86px 86px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     text-align: center;
     position: relative;
-    overflow: hidden; /* Impede o conteúdo de vazar as bordas */
+    overflow: hidden;
 }
 
-/* Botão de fechar */
 .fecharMenu {
     color: #e83c84c3;
     border: 2px solid #e83c84c3;
@@ -62,25 +58,23 @@
     right: -1.2px;
 }
 
-.fecharMenu img{
+.fecharMenu img {
     max-width: 26px;
-    max-height:30px;
-}  
+    max-height: 30px;
+}
 
-/* Usando checkbox para alternar a exibição do menu */
 #menuAberto {
     display: none;
 }
 
-#menuAberto:checked~.desfocado {
+#menuAberto:checked ~ .desfocado {
     display: flex;
 }
 
 .infos {
     display: flex;
-    justify-content: center;
-    gap: 2px;
     flex-direction: column;
+    gap: 5px;
 }
 
 .infos span {
@@ -89,6 +83,49 @@
     font-size: 1.2vw;
 }
 
-.info input {
-    background-color: white;
+.infos input {
+    background-color: #D9D9D9;
+    height: 40px;
+    width: 340px;
+    border-radius: 21px;
+    border: 1px solid #E83C84;
+    padding-left: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.infos label {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: bold;
+    display: flex;
+    color: #FFFFFF;
+    margin-left: 80px;
+    font-size: 1.1rem;
+}
+
+.acessar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b1b1b;
+    padding: 64px 64px 64px 64px;
+}
+
+.acessar button {
+    color: white;
+    border: 2px solid #e83c84c3;
+    font-size: 35px;
+    font-family: "JetBrains Mono", monospace;
+    background-color: #e83c84cb;
+    height: 60px;
+    width: 42%;
+    border-radius: 24px;
+}
+
+.acessar button:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: #e83c8490;
 }
