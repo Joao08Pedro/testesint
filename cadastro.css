@@ -62,13 +62,9 @@
     right: -1.2px;
 }
 
-;.fecharMenu img{
-    width: 64px;  /* Largura de 64px */
-    height: 1px; /* Altura de 65px */
-    object-fit: contain; /* Mantém a proporção */
-    display: block;
-    mix-width: 100%;
-    max-height: 100%;
+.fecharMenu img{
+    max-width: 26px;
+    max-height:30px;
 }  
 
 /* Usando checkbox para alternar a exibição do menu */
@@ -78,4 +74,21 @@
 
 #menuAberto:checked~.desfocado {
     display: flex;
+}
+
+.infos {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    flex-direction: column;
+}
+
+.infos span {
+    font-family: "JetBrains Mono", monospace;
+    color: white;
+    font-size: 1.2vw;
+}
+
+.info input {
+    background-color: white;
 }
